@@ -14,12 +14,10 @@
 {% block contenidoquecambia3 %}
     <h2 class="display-5">Formulario</h2>
 
-    <form action="/contacto/" method = "POST">
+    <form action="/contacto/" method = "POST"> {% csrf_token %}
 
-        <p>Nombre: <input type="text" name="nombre"></p>
-        <p>Apellido: <input type="text" name="nombre"></p>
-        <p>Consulta: <input type="text" name="nombre" style="width : 300px; height: 100px; "></p>
 
+        {{miFormulario.as_p}}
 
         <input type="submit" value="Enviar">
     </form>
