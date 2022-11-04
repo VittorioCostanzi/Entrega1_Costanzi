@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Vista Proyectos
-</body>
-</html>
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenidoquecambia1 %}
+
+    <h2 class="display-5">Nombre de la empresa</h2>
+    <p class="lead">Aca va una descripcion mas extensa y la mision de la empresa, a que se dedican y a que apuntan.</p>
+
+{% endblock %}
+
+{% block contenidoquecambia2 %}
+    <h2 class="display-5">ACA VA UNA IMAGEN REFERIDA A LA PESTAÑA "NOSOTROS"</h2>
+{% endblock %}
+
+{% block contenidoquecambia3 %}
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+
+        <h2 class="display-5">Descripcion de proyecto</h2>
+        
+        
+      </div>
+    </div>
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+       
+        <h2 class="display-5">Imagen de proyecto</h2>
+
+      </div>
+    </div>
+  </div>
+
+  <h1>Se agregan tantos como proyectos haya</h1>
+
+{% endblock %}

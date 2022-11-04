@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Vista nosotros
-</body>
-</html>
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenidoquecambia1 %}
+
+    <h2 class="display-5">Nombre de la empresa</h2>
+    <p class="lead">Aca va una descripcion mas extensa y la mision de la empresa, a que se dedican y a que apuntan.</p>
+
+{% endblock %}
+
+{% block contenidoquecambia2 %}
+    <h2 class="display-5">ACA VA UNA IMAGEN REFERIDA A LA PESTAÑA "NOSOTROS"</h2>
+{% endblock %}
